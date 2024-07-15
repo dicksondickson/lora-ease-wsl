@@ -29,6 +29,12 @@ araminta_k's training tutorial:
 
 
 
+# Changelog  
+v1.1 - Add Apple Metal support.  
+v1.0 - Init fork and modified to run on Windows WSL.  
+
+
+
 # Install  
 
 Install WSL with Ubuntu (Ubuntu 22.04)  
@@ -65,9 +71,16 @@ Go into dir:
 
 `cd train`   
 
-Clone this repo:   
+Clone this repo from Github:   
 
-`git clone https://github.com/dicksondickson/lora-ease-wsl.git`
+`git clone https://github.com/dicksondickson/lora-ease-wsl.git`   
+
+
+Or from Hugging Face:   
+
+`git clone https://huggingface.co/dicksondickson/lora-ease-wsl`   
+
+
 
 Go into the dir:   
 

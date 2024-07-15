@@ -1,3 +1,19 @@
+"""
+
+LoRA Ease
+
+v1.1
+
+dicksondickson
+https://huggingface.co/dicksondickson/lora-ease-wsl
+
+
+multimodalart
+https://huggingface.co/spaces/multimodalart/lora-ease
+
+
+"""
+
 import gradio as gr
 from PIL import Image
 import requests
@@ -27,7 +43,23 @@ subprocess.run(['wget', '-N', training_script_url])
 orchestrator_script_url = "https://huggingface.co/datasets/multimodalart/lora-ease-helper/raw/main/script.py"
 subprocess.run(['wget', '-N', orchestrator_script_url])
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
+
+# device = "cuda" if torch.cuda.is_available() else "cpu"
+
+
+# Check for available GPU devices
+if torch.cuda.is_available():
+    # If CUDA (NVIDIA GPU) is available, use it
+    device = torch.device("cuda")
+elif hasattr(torch.backends, 'mps') and torch.backends.mps.is_available():
+    # If MPS (Apple Silicon GPU) is available, use it
+    device = torch.device("mps")
+else:
+    # If no GPU is available, use CPU
+    device = torch.device("cpu")
+        
+        
+        
 
 FACES_DATASET_PATH = snapshot_download(repo_id="multimodalart/faces-prior-preservation", repo_type="dataset")
 #Delete .gitattributes to process things properly
