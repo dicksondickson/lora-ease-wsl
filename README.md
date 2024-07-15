@@ -67,7 +67,7 @@ Go into dir:
 
 Clone this repo:   
 
-`git clone https://huggingface.co/dicksondickson/lora-ease-wsl`
+`git clone https://github.com/dicksondickson/lora-ease-wsl`
 
 Go into the dir:   
 
