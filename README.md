@@ -6,6 +6,16 @@ license: mit
 
 This is a modified Python script of LoRA Ease from multimodalart to run on locally on Windows 11 via WSL. Thanks to multimodalart for this wonderful script.
 
+
+Github version of this repo:  
+[https://github.com/dicksondickson/lora-ease-wsl](https://github.com/dicksondickson/lora-ease-wsl)  
+
+
+Hugging Face version of this repo:   
+[https://huggingface.co/dicksondickson/lora-ease-wsl](https://huggingface.co/dicksondickson/lora-ease-wsl)   
+
+
+
 Original repo:  
 [https://huggingface.co/spaces/multimodalart/lora-ease](https://huggingface.co/spaces/multimodalart/lora-ease)  
 
