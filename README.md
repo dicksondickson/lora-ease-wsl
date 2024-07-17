@@ -1,26 +1,12 @@
----
-license: mit
----
 
-# lora-ease-wsl
+# LoRA Ease WSL   
 
-This is a modified Python script of LoRA Ease from multimodalart to run on locally on Windows 11 via WSL. Thanks to multimodalart for this wonderful script.
+LoRA Ease WSL is a modified Python script of LoRA Ease from multimodalart to run on locally on Windows 10/11 via WSL.   
 
-
-Github version of this repo:  
-[https://github.com/dicksondickson/lora-ease-wsl](https://github.com/dicksondickson/lora-ease-wsl)  
+This script combines the Pivotal Tuning technique used on Replicate's SDXL Cog trainer with the Prodigy optimizer used in the Kohya trainer (plus a bunch of other optimizations) to achieve very good results on training Dreambooth LoRAs for SDXL.   
 
 
-Hugging Face version of this repo:   
-[https://huggingface.co/dicksondickson/lora-ease-wsl](https://huggingface.co/dicksondickson/lora-ease-wsl)   
-
-
-
-Original repo:  
-[https://huggingface.co/spaces/multimodalart/lora-ease](https://huggingface.co/spaces/multimodalart/lora-ease)  
-
-
-Thier blog post on the script:  
+multimodalart's blog post on the script:  
 [https://huggingface.co/blog/sdxl_lora_advanced_script](https://huggingface.co/blog/sdxl_lora_advanced_script)  
 
 
@@ -29,15 +15,17 @@ araminta_k's training tutorial:
 
 
 
-# Changelog  
+# Changelog    
 v1.1 - Add Apple Metal support.  
 v1.0 - Init fork and modified to run on Windows WSL.  
 
 
 
-# Install  
+# Install   
 
-Install WSL with Ubuntu (Ubuntu 22.04)  
+## I recommend creating brand new WSL instance using Ubuntu 22.04
+
+Install WSL with Ubuntu (Ubuntu 22.04)   
 
 `wsl --install Ubuntu`  
 
@@ -75,13 +63,6 @@ Clone this repo from Github:
 
 `git clone https://github.com/dicksondickson/lora-ease-wsl.git`   
 
-
-Or from Hugging Face:   
-
-`git clone https://huggingface.co/dicksondickson/lora-ease-wsl`   
-
-
-
 Go into the dir:   
 
 `cd lora-ease-wsl`   
@@ -101,3 +82,22 @@ After that is done, you should be presented with a link to load up the GUI in yo
 Have fun!   
 
 
+# Acknowledgments   
+
+Thanks to multimodalart for this wonderful script.   
+
+Original repo:  
+[https://huggingface.co/spaces/multimodalart/lora-ease](https://huggingface.co/spaces/multimodalart/lora-ease)     
+
+
+Github version of this repo:  
+[https://github.com/dicksondickson/lora-ease-wsl](https://github.com/dicksondickson/lora-ease-wsl)     
+
+
+Hugging Face version of this repo:   
+[https://huggingface.co/dicksondickson/lora-ease-wsl](https://huggingface.co/dicksondickson/lora-ease-wsl)      
+
+
+---
+license: mit   
+---
